@@ -1,0 +1,14 @@
+require pry
+require rainbow
+
+students = [ALL STUDENT NAMES]
+students = students.shuffle
+
+group_size = gets.to_i
+number_of_groups = students.count / group_size
+
+number_of_groups.times do |group_number|
+  puts "/n/nGroup #{group_number}
+  print "#{students.pop(group_size).join(', ')}
+end
+puts ", #students.join(', ')}/n/n"
